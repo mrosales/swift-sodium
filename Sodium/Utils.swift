@@ -1,7 +1,9 @@
 import Foundation
 import Clibsodium
 
-public struct Utils {}
+public struct Utils {
+    public init() {}
+}
 
 extension Utils {
     public enum Base64Variant: CInt {
