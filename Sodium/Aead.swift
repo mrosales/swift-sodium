@@ -2,6 +2,7 @@ import Foundation
 import Clibsodium
 
 public struct Aead {
+    public init() {}
     public let xchacha20poly1305ietf = XChaCha20Poly1305Ietf()
 }
 

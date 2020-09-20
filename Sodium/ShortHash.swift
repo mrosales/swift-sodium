@@ -2,6 +2,7 @@ import Foundation
 import Clibsodium
 
 public struct ShortHash {
+    public init() {}
     public let Bytes = Int(crypto_shorthash_bytes())
 }
 

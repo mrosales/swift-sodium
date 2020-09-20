@@ -2,6 +2,7 @@ import Foundation
 import Clibsodium
 
 public struct Sign {
+    public init() {}
     public let Bytes = Int(crypto_sign_bytes())
     public let Primitive = String(validatingUTF8: crypto_sign_primitive())
 }

@@ -2,6 +2,7 @@ import Foundation
 import Clibsodium
 
 public struct SecretBox {
+    public init() {}
     public let MacBytes = Int(crypto_secretbox_macbytes())
     public typealias MAC = Bytes
 }

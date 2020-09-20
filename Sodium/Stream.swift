@@ -2,6 +2,7 @@ import Foundation
 import Clibsodium
 
 public struct Stream {
+    public init() {}
     public let Primitive = String(validatingUTF8: crypto_stream_primitive())
 }
 

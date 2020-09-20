@@ -2,6 +2,7 @@ import Foundation
 import Clibsodium
 
 public struct Box {
+    public init() {}
     public let MacBytes = Int(crypto_box_macbytes())
     public let Primitive = String(validatingUTF8:crypto_box_primitive())
     public let BeforenmBytes = Int(crypto_box_beforenmbytes())
