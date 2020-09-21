@@ -20,8 +20,7 @@ s.static_framework = true
 
 s.xcconfig = {
   'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-  'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium/Headers"',
-  'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"',
+  'SWIFT_INCLUDE_PATHS' => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"',
   'OTHER_LDFLAGS' => '$(inherited) -ObjC -l"sodium"'
 }
 
